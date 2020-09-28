@@ -1,0 +1,79 @@
+<html>
+
+    <head>
+        <title>Medical Ontology</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="/script.js"></script>
+    </head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a href="/" class="navbar-brand"><b>Medical</b>Ontology</a>     
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <div class="navbar-nav">
+        <a href="/" class="nav-item nav-link active">Home</a> 
+
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Add</a>
+          <div class="dropdown-menu">         
+            <a class="dropdown-item" href="/add">Add Diseases</a>
+            <a class="dropdown-item" href="/addT">Add Treatments</a>
+            <a class="dropdown-item" href="/addS">Add Symtoms</a>
+          </div>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Add Relationship Between</a>
+          <div class="dropdown-menu">         
+            <a class="dropdown-item" href="/addRT">Disease and Treatment</a>
+            <a class="dropdown-item" href="/addRS">Disease and Symtom</a>
+          </div>
+        </div>
+
+        <div class="nav-item dropdown">
+          <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">Delete</a>
+          <div class="dropdown-menu">         
+            <a class="dropdown-item" href="/deleteD">Delete Diseases</a>
+            <a class="dropdown-item" href="/deleteT">Delete Treatments</a>
+            <a class="dropdown-item" href="/deleteS">Delete Symtoms</a>
+          </div>
+        </div>
+        
+        <a href="/about" class="nav-item nav-link">About</a>
+        <a href="/search" class="nav-item nav-link">Search</a>
+          </div>    
+      <div class="navbar-nav ml-auto">      
+        <div class="nav-item dropdown search-dropdown">
+          <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle" href="#"><i class="fa fa-search"></i></a>
+          <a data-toggle="dropdown" class="nav-item nav-link dropdown-toggle d-none" href="#"><i class="fa fa-close"></i></a>
+          <div class="dropdown-menu">
+            <div>
+                          <form>
+                              <div class="input-group search-box">                
+                                  <input type="text" id="search" class="form-control" placeholder="Search here...">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                  </div>
+                              </div>
+                          </form>                        
+                      </div>
+                  </div>
+              </div>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="nav-item nav-link"><i class="fa fa-google-plus"></i></a>
+          </div>
+    </div>
+  </nav>
+</body>
+
+
+
+

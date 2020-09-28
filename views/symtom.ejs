@@ -1,0 +1,22 @@
+<% include ../views/partials/header %>
+
+<br><br><br><br>
+
+
+<head>
+    <style>
+      h3 { color: #FF0000; font-size : 50px }
+      li {color: #030303; font-size : 20px}
+    </style>
+</head>
+<h3> A Symtom Of : </h3>
+<br>
+<ul>
+    <% tl.forEach(function(symtom){ %>
+        <li><%= symtom.name %></li>
+    <% }) %>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<% include ../views/partials/footer %>

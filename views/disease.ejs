@@ -1,0 +1,31 @@
+<% include ../views/partials/header %>
+
+<br><br><br><br>
+
+
+<head>
+    <style>
+      h3 { color: #FF0000; font-size : 50px }
+      li {color: #030303; font-size : 20px}
+    </style>
+</head>
+
+<h3> Symtoms:</h3>
+<br>
+<ul>
+    <% t2.forEach(function(disease1){ %>
+        <li><%= disease1.name %></li>
+    <% }) %>
+</ul>
+
+<h3> Treated By:</h3>
+<br>
+<ul>
+    <% tl.forEach(function(disease){ %>
+        <li><%= disease.name %></li>
+    <% }) %>
+</ul>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<% include ../views/partials/footer %>

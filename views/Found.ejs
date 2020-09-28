@@ -1,0 +1,16 @@
+
+<% include ../views/partials/header %>
+
+<div class = "gap">
+</div>
+
+<div class = "container col-md-3 offset-md-3 mx-auto col-sm-10 col-xs-10">
+    <% t1Arr.forEach(function(Arr){ %>
+        <li><a href="/disease/<%= Arr.id %>" class = "btn btn-outline-secondary"><%= Arr.name %></a></li>
+    <% }) %>
+</div>
+
+<div class = "gap">
+</div>
+
+<% include ../views/partials/footer %>

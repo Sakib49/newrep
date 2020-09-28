@@ -1,0 +1,23 @@
+<% include ../views/partials/header %>
+
+<section id="three">
+    <div class="inner">
+        <article>
+            <div class="content">
+                <span class="icon fa-wheelchair"></span>
+                <header>
+                    <h3>Disease</h3>
+                </header>
+
+
+<div class="row">
+    <% disease.forEach(function(disease){ %>
+        <div class="col-md-4">
+            <div class="well well-lg"><i class="fa fa-stethoscope" style="font-size:26px"></i><a href = "disease/<%= disease.id %>"  class="btn btn-info" role="button"><%= disease.name %></a></div>
+        </div>
+    <% }) %>
+</div>
+
+</article>
+</div>
+</section>

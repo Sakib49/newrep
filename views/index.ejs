@@ -1,0 +1,105 @@
+<% include ../views/partials/header %>
+
+
+<!-- Banner -->
+            <section id="banner">
+                <div class="inner text-center">
+                    <h1>Medical Ontology: <span>A free medical knowledge<br />
+                    and terminology database</span></h1>
+                    <ul class="actions text-center">
+                        <li><a href="/add" class="button alt">Get Started</a></li>
+                    </ul>
+                </div>
+            </section>
+
+<section id="one">
+                <div class="inner">
+                    <header>
+                        <h2>Medical Ontology</h2>
+                    </header>
+                    <p>The term “medical ontology” we understand to mean the study that seeks to ascertain what entities exist in the world of medicine, which formal relations hold between them, and whether there are any relatioships between types of medical research and practice, on the one hand; and the new worlds they create, on the other.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button alt">Learn More</a></li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+<!-- Three -->
+            <section id="three">
+                <div class="inner">
+                    <article>
+                        <div class="content">
+                            <span class="icon fa-wheelchair"></span>
+                            <header>
+                                <h3>Disease</h3>
+                            </header>
+<!--
+                            <div class="row">
+                                <% disease.forEach(function(disease){ %>
+                                    <div class="col-md-2">
+                                        <div class="well well-lg"><i class="fa fa-stethoscope" style="font-size:26px"></i><a href = "/disease/<%= disease.id %>" class="btn btn-info" role="button"><%= disease.name %></a></div>
+                                    </div>
+                                <% }) %>
+                            </div>
+                        -->
+                            <p>See diseases</p>
+                            <ul class="actions">
+                                <li><a href="/disease" class="button alt">Learn More</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="content">
+                            <span class="icon fa-eyedropper"></span>
+                            <header>
+                                <h3>Treatment</h3>
+                            </header>
+<!--
+                            <div class="row">
+                                <% treatment.forEach(function(treatment){ %>
+                                    <div class="col-md-2">
+                                        <div class="well well-lg"><i class='fas fa-band-aid' style='font-size:24px'></i><a href = "/treatment/<%= treatment.id %>" class="btn btn-info"><%= treatment.name %></a></div>
+                                    </div>
+                                <% }) %>
+                            </div>
+                        -->
+                            <p>See treatments</p>
+                            <ul class="actions">
+                                <li><a href="/treatment" class="button alt">Learn More</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article>
+                    <div class="content">
+                            <span class="icon fa-thermometer"></span>
+                            <header>
+                                <h3>Symptom</h3>
+                            </header>
+<!--
+                            <div class="row">
+                                <% symtom.forEach(function(symtom){ %>
+                                    <div class="col-md-2">
+                                        <div class="well well-lg"><i class='fas fa-band-aid' style='font-size:24px'></i><a href = "/symtom/<%= symtom.id %>" class="btn btn-info"><%= symtom.name %></a></div>
+                                    </div>
+                                <% }) %>
+                            </div>
+                        -->
+                            <p>See symptoms</p>
+                            <ul class="actions">
+                                <li><a href="/symptom" class="button alt">Learn More</a></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+
+
+
+
+<div class = "gap">
+</div>
+
+<% include ../views/partials/footer %>

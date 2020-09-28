@@ -1,0 +1,23 @@
+<% include ../views/partials/header %>
+
+<section id="three">
+    <div class="inner">
+        <article>
+            <div class="content">
+                <span class="icon fa-eyedropper"></span>
+                <header>
+                    <h6>Treatment</h6>
+                </header>
+
+
+                <div class="row">
+                    <% treatment.forEach(function(treatment){ %>
+                        <div class="col-md-5">
+                            <div class="well well-lg"><i class='fas fa-band-aid' style='font-size:24px'></i><a href = "/treatment/<%= treatment.id -%>" class="btn btn-info"><%= treatment.name -%></a></div>
+                        </div>
+                    <% }) %>
+                </div>
+
+</article>
+</div>
+</section>
